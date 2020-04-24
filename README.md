@@ -44,8 +44,6 @@
 
 ### __* 과제1: Navigation 활용 화면이동__
 
-![화면 기록 2020-04-24 오후 9 01 12](https://user-images.githubusercontent.com/22251299/80211902-7fb1b300-8671-11ea-9760-e2442f196006.gif style=" width:200px ")
-#### storyboard에서 push로 연결
 <div>
 <img width="200" alt="스크린샷 2020-04-24 오후 2 37 20" src="https://user-images.githubusercontent.com/22251299/80178674-c4b9f300-8639-11ea-874b-44db2ec4ff8f.png">
 
@@ -54,6 +52,7 @@
 <img width="200" alt="스크린샷 2020-04-24 오후 2 37 38" src="https://user-images.githubusercontent.com/22251299/80178706-dc917700-8639-11ea-9e85-47ca7aea3871.png">
 </div>
 
+#### storyboard에서 push로 연결
 
 ### __* 과제2: 로그인 화면 구현__
 
