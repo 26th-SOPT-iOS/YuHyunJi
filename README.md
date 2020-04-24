@@ -3,9 +3,6 @@
 ### __* 화면 간 데이터 전달__
 
 <div>
-
-  ![화면 기록 2020-04-24 오후 9 01 12](https://user-images.githubusercontent.com/22251299/80211902-7fb1b300-8671-11ea-9760-e2442f196006.gif)
-
 <img width="200" alt="스크린샷 2020-04-24 오후 2 32 10" src="https://user-images.githubusercontent.com/22251299/80178580-87556580-8639-11ea-99c7-07bb3d3483a3.png">
 
 <img width="200" alt="스크린샷 2020-04-24 오후 2 32 21" src="https://user-images.githubusercontent.com/22251299/80178640-af44c900-8639-11ea-9a10-8aec70c465c2.png">
@@ -47,6 +44,8 @@
 
 ### __* 과제1: Navigation 활용 화면이동__
 
+![화면 기록 2020-04-24 오후 9 01 12](https://user-images.githubusercontent.com/22251299/80211902-7fb1b300-8671-11ea-9760-e2442f196006.gif style=" width:200px ")
+#### storyboard에서 push로 연결
 <div>
 <img width="200" alt="스크린샷 2020-04-24 오후 2 37 20" src="https://user-images.githubusercontent.com/22251299/80178674-c4b9f300-8639-11ea-874b-44db2ec4ff8f.png">
 
