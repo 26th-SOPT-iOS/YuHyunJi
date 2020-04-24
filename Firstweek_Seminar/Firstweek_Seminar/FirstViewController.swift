@@ -23,11 +23,15 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func transferData(_ sender: Any) {
-        guard let receiveController = self.storyboard?.instantiateViewController(identifier: "secondViewController") as? SecondViewController else {return}
+        
+        guard let receiveController = self.storyboard?.instantiateViewController(identifier: "secondViewController") as? SecondViewController else { return }
+        
         receiveController.name = nameTextfield.text
         receiveController.email = emailTextfield.text
         receiveController.isOnoff = sampleSwitch.isOn
         receiveController.frequency = sampleSlider.value
+        
+        //코드로 뷰간의 present연결 (이때,스토리보드에선 뷰간 연결해주면 안됨)
         self.present(receiveController, animated: true, completion: nil)
         
     }
