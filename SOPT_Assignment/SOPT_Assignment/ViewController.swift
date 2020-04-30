@@ -10,17 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var idTextfield: UITextField!
+    @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var pwTextfield: UITextField!
+    
+    @IBOutlet weak var emailTextview: UIView!
+    @IBOutlet weak var pwTextview: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emailTextview.layer.cornerRadius = 22
+        pwTextview.layer.cornerRadius = 22
     }
 
     @IBAction func login(_ sender: Any) {
         guard let lvc = self.storyboard?.instantiateViewController(identifier: "loginViewController") as? LoginViewController else {return}
         
-        lvc.idvalue = idTextfield.text
+        lvc.idvalue = emailTextfield.text
         lvc.pwvalue = pwTextfield.text
         self.present(lvc, animated: true, completion: nil)
     }
