@@ -15,6 +15,7 @@
 		A15D956B244AE64D0039335E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15D9569244AE64D0039335E /* LaunchScreen.storyboard */; };
 		A15D9573244AF21F0039335E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D9572244AF21F0039335E /* LoginViewController.swift */; };
 		A15D9575244B06AF0039335E /* ApplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D9574244B06AF0039335E /* ApplyViewController.swift */; };
+		A161227B245BB6F6001D2C9F /* OursoptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A161227A245BB6F6001D2C9F /* OursoptViewController.swift */; };
 		A1855C16245068DC0027F0EB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1855C15245068DC0027F0EB /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		A15D956C244AE64D0039335E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A15D9572244AF21F0039335E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A15D9574244B06AF0039335E /* ApplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyViewController.swift; sourceTree = "<group>"; };
+		A161227A245BB6F6001D2C9F /* OursoptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OursoptViewController.swift; sourceTree = "<group>"; };
 		A1855C15245068DC0027F0EB /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +74,7 @@
 				A15D9572244AF21F0039335E /* LoginViewController.swift */,
 				A15D9574244B06AF0039335E /* ApplyViewController.swift */,
 				A1855C15245068DC0027F0EB /* CustomButton.swift */,
+				A161227A245BB6F6001D2C9F /* OursoptViewController.swift */,
 			);
 			path = SOPT_Assignment;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				A15D9575244B06AF0039335E /* ApplyViewController.swift in Sources */,
 				A15D955F244AE64C0039335E /* AppDelegate.swift in Sources */,
 				A15D9561244AE64C0039335E /* SceneDelegate.swift in Sources */,
+				A161227B245BB6F6001D2C9F /* OursoptViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

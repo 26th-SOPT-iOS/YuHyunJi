@@ -10,174 +10,224 @@
         <!--View Controller-->
         <scene sceneID="n61-ni-SDB">
             <objects>
-                <viewController id="7vX-s7-geA" sceneMemberID="viewController">
+                <viewController id="7vX-s7-geA" customClass="ViewController" customModule="Secondweek_Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fiE-GR-WXE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hj6-GO-WXT">
-                                <rect key="frame" x="17" y="385" width="380" height="460"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hj6-GO-WXT">
+                                <rect key="frame" x="16" y="366" width="382" height="480"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="BP5-l9-yzO">
-                                        <rect key="frame" x="0.0" y="0.0" width="380" height="80"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BP5-l9-yzO">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="88"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yws-Ea-h05">
-                                                <rect key="frame" x="0.0" y="0.0" width="380" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="88"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="62"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6eI-UI-75r">
-                                        <rect key="frame" x="0.0" y="95" width="380" height="80"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6eI-UI-75r">
+                                        <rect key="frame" x="0.0" y="98" width="382" height="88"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIn-JO-p0T" customClass="CustomButton" customModule="Secondweek_Assignment" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="7">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnNumberClickWithBtn:" destination="7vX-s7-geA" eventType="touchUpInside" id="hEx-Gn-SwE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcQ-ll-TDF" customClass="CustomButton" customModule="Secondweek_Assignment" customModuleProvider="target">
-                                                <rect key="frame" x="100" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="98" y="0.0" width="88" height="88"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="8">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnNumberClickWithBtn:" destination="7vX-s7-geA" eventType="touchUpInside" id="yrl-ij-VEV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krb-Pb-8PZ" customClass="CustomButton" customModule="Secondweek_Assignment" customModuleProvider="target">
-                                                <rect key="frame" x="200" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="196" y="0.0" width="88" height="88"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="9">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnNumberClickWithBtn:" destination="7vX-s7-geA" eventType="touchUpInside" id="4rZ-TI-upd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBZ-zQ-UzP" customClass="CustomButton" customModule="Secondweek_Assignment" customModuleProvider="target">
-                                                <rect key="frame" x="300" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="294" y="0.0" width="88" height="88"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="÷">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="operationWithSign:" destination="7vX-s7-geA" eventType="touchUpInside" id="dge-b9-Qmb"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8oi-si-kod">
-                                        <rect key="frame" x="0.0" y="190" width="380" height="80"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8oi-si-kod">
+                                        <rect key="frame" x="0.0" y="196" width="382" height="88"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxc-xU-Nln" customClass="CustomButton" customModule="Secondweek_Assignment" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="4">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnNumberClickWithBtn:" destination="7vX-s7-geA" eventType="touchUpInside" id="SMZ-uN-Nyh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzB-nL-ilM" customClass="CustomButton" customModule="Secondweek_Assignment" customModuleProvider="target">
-                                                <rect key="frame" x="100" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="98" y="0.0" width="88" height="88"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="5">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnNumberClickWithBtn:" destination="7vX-s7-geA" eventType="touchUpInside" id="XuG-ez-apt"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTR-oE-Huz" customClass="CustomButton" customModule="Secondweek_Assignment" customModuleProvider="target">
-                                                <rect key="frame" x="200" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="196" y="0.0" width="88" height="88"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="6">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnNumberClickWithBtn:" destination="7vX-s7-geA" eventType="touchUpInside" id="wDH-Q1-dON"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7C-zA-UcG" customClass="CustomButton" customModule="Secondweek_Assignment" customModuleProvider="target">
-                                                <rect key="frame" x="300" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="294" y="0.0" width="88" height="88"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="×">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="operationWithSign:" destination="7vX-s7-geA" eventType="touchUpInside" id="ZOS-9x-ZgW"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fkf-9e-lEk">
-                                        <rect key="frame" x="0.0" y="285" width="380" height="80"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fkf-9e-lEk">
+                                        <rect key="frame" x="0.0" y="294" width="382" height="88"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="La1-G7-0Ua" customClass="CustomButton" customModule="Secondweek_Assignment" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="1">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnNumberClickWithBtn:" destination="7vX-s7-geA" eventType="touchUpInside" id="lJN-kw-EYy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnt-Re-LdY" customClass="CustomButton" customModule="Secondweek_Assignment" customModuleProvider="target">
-                                                <rect key="frame" x="100" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="98" y="0.0" width="88" height="88"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="2">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnNumberClickWithBtn:" destination="7vX-s7-geA" eventType="touchUpInside" id="s7C-SL-mPt"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSu-BP-aJr" customClass="CustomButton" customModule="Secondweek_Assignment" customModuleProvider="target">
-                                                <rect key="frame" x="200" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="196" y="0.0" width="88" height="88"/>
                                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="3">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnNumberClickWithBtn:" destination="7vX-s7-geA" eventType="touchUpInside" id="cmv-6G-EFp"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ic-Vj-zBa" customClass="CustomButton" customModule="Secondweek_Assignment" customModuleProvider="target">
-                                                <rect key="frame" x="300" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="294" y="0.0" width="88" height="88"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="-">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="operationWithSign:" destination="7vX-s7-geA" eventType="touchUpInside" id="sKF-yJ-Atp"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SIS-8U-EgQ">
-                                        <rect key="frame" x="0.0" y="380" width="380" height="80"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SIS-8U-EgQ">
+                                        <rect key="frame" x="0.0" y="392" width="382" height="88"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JqW-vo-8To" customClass="CustomButton" customModule="Secondweek_Assignment" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="W4n-6P-hMg"/>
-                                                    <constraint firstAttribute="width" constant="80" id="hQW-QJ-rkb"/>
+                                                    <constraint firstAttribute="width" secondItem="JqW-vo-8To" secondAttribute="height" multiplier="1:1" id="sNB-Hi-ylP"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                 <state key="normal" title="AC">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnResetClickWithBtn:" destination="7vX-s7-geA" eventType="touchUpInside" id="8f8-df-B5R"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8D-w3-zBm" customClass="CustomButton" customModule="Secondweek_Assignment" customModuleProvider="target">
-                                                <rect key="frame" x="100" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="98" y="0.0" width="88" height="88"/>
                                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="E8D-w3-zBm" secondAttribute="height" multiplier="1:1" id="tqw-uJ-j4O"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="0">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="btnNumberClickWithBtn:" destination="7vX-s7-geA" eventType="touchUpInside" id="U56-Ny-H0B"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2R-9H-p7T" customClass="CustomButton" customModule="Secondweek_Assignment" customModuleProvider="target">
-                                                <rect key="frame" x="200" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="196" y="0.0" width="88" height="88"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="=">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="operationWithSign:" destination="7vX-s7-geA" eventType="touchUpInside" id="boi-wF-pUe"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szO-nP-GBi" customClass="CustomButton" customModule="Secondweek_Assignment" customModuleProvider="target">
-                                                <rect key="frame" x="300" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="294" y="0.0" width="88" height="88"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <state key="normal" title="+">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="operationWithSign:" destination="7vX-s7-geA" eventType="touchUpInside" id="XPv-IC-m9d"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -186,12 +236,15 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="vV5-t3-1k0" firstAttribute="trailing" secondItem="hj6-GO-WXT" secondAttribute="trailing" constant="17" id="4E8-Ru-Uew"/>
-                            <constraint firstItem="hj6-GO-WXT" firstAttribute="leading" secondItem="vV5-t3-1k0" secondAttribute="leading" constant="17" id="C9I-se-pQ9"/>
-                            <constraint firstItem="vV5-t3-1k0" firstAttribute="bottom" secondItem="hj6-GO-WXT" secondAttribute="bottom" constant="17" id="Cel-aj-dUn"/>
+                            <constraint firstItem="vV5-t3-1k0" firstAttribute="trailing" secondItem="hj6-GO-WXT" secondAttribute="trailing" constant="16" id="4E8-Ru-Uew"/>
+                            <constraint firstItem="hj6-GO-WXT" firstAttribute="leading" secondItem="vV5-t3-1k0" secondAttribute="leading" constant="16" id="C9I-se-pQ9"/>
+                            <constraint firstItem="vV5-t3-1k0" firstAttribute="bottom" secondItem="hj6-GO-WXT" secondAttribute="bottom" constant="16" id="Cel-aj-dUn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vV5-t3-1k0"/>
                     </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="yws-Ea-h05" id="F3K-Mp-Npq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24x-T9-Zu2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,7 +13,7 @@ class CustomButton: UIButton {
         super.init(coder: aDecoder)!
         
         //값이 커질수록 둥글
-        self.layer.cornerRadius = 0.49 * self.bounds.size.width
+        self.layer.cornerRadius = self.layer.frame.size.height * 0.46
         //버튼 배경색
         //self.backgroundColor = UIColor(red: 8/255, green: 37/255, blue: 108/255, alpha: 1)
         //버튼의 textcolor
