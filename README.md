@@ -101,9 +101,11 @@ class CustomButton: UIButton {
 ### __* 과제1: 계산기 Autolayout__
 
 <div>
-<img width="200" alt="스크린샷 2020-05-06 오후 7 24 33" src="https://user-images.githubusercontent.com/22251299/81291733-4e8ba680-90a5-11ea-99c8-da139924d7b3.png">
+<img width="200" alt="스크린샷 2020-05-06 오후 7 24 04" src="https://user-images.githubusercontent.com/22251299/81295006-b2fd3480-90aa-11ea-860a-455589704124.png">
 
-<img width="200" alt="스크린샷 2020-05-06 오후 7 24 04" src="https://user-images.githubusercontent.com/22251299/81291792-6fec9280-90a5-11ea-91d8-fe855fb6c48f.png">
+<img width="200" alt="스크린샷 2020-05-06 오후 7 24 17" src="https://user-images.githubusercontent.com/22251299/81295036-c3adaa80-90aa-11ea-8dc6-860bc0701ea6.png">
+
+<img width="200" alt="스크린샷 2020-05-06 오후 7 24 33" src="https://user-images.githubusercontent.com/22251299/81295103-daec9800-90aa-11ea-8111-9959e7dc8473.png">
 </div>
 
 <img width="474" alt="스크린샷 2020-05-07 오후 9 05 00" src="https://user-images.githubusercontent.com/22251299/81292382-77606b80-90a6-11ea-8125-6301147aea9a.png">
