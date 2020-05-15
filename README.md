@@ -135,6 +135,18 @@ class CustomButton: UIButton {
 ```
 
 ## Thirdweek_seminar  
+### __* UIPickerView__: 뮤직리스트 앱 만들기
+### __* UITableView__ : 날씨 앱 만들기
+### __* UICollectionView__: 뮤직리스트 앱 만들기
+
+<div>
+<img width="200" alt="스크린샷 2020-05-15 오후 8 11 21" src="https://user-images.githubusercontent.com/22251299/82044817-01cd4e80-96e9-11ea-886f-5af72758aceb.png">
+
+<img width="200" alt="스크린샷 2020-05-15 오후 8 10 25" src="https://user-images.githubusercontent.com/22251299/82044862-16a9e200-96e9-11ea-95f2-92a678439608.png">
+
+<img width="200" alt="스크린샷 2020-05-15 오후 8 09 09" src="https://user-images.githubusercontent.com/22251299/82044912-29241b80-96e9-11ea-99e3-7b51d791df6b.png">
+</div>
+
 ### __* 과제1: tableview로 카카오톡 채팅 구현하기__
 
 <div>
@@ -169,7 +181,7 @@ class CustomButton: UIButton {
         return headerView
     }
     
-    //custom한 cell을 제외한 다른 cell 없애는 법
+    //custom한 cell의 header를 제외한 다른 cell header (header height = 0으로 하여) 없애주기
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         if section == 0 {
             return 0
