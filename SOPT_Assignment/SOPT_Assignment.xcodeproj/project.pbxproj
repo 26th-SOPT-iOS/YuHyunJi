@@ -15,6 +15,12 @@
 		A15D956B244AE64D0039335E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15D9569244AE64D0039335E /* LaunchScreen.storyboard */; };
 		A15D9573244AF21F0039335E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D9572244AF21F0039335E /* LoginViewController.swift */; };
 		A15D9575244B06AF0039335E /* ApplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D9574244B06AF0039335E /* ApplyViewController.swift */; };
+		A15F73D8246E53670022C3CC /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F73D7246E53670022C3CC /* FriendViewController.swift */; };
+		A15F73DA246E59CD0022C3CC /* MyProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F73D9246E59CD0022C3CC /* MyProfileCell.swift */; };
+		A15F73DC246E59E80022C3CC /* FriendProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F73DB246E59E80022C3CC /* FriendProfileCell.swift */; };
+		A15F73DE246E5B3E0022C3CC /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F73DD246E5B3E0022C3CC /* Friends.swift */; };
+		A15F73E0246E5BA70022C3CC /* MyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F73DF246E5BA70022C3CC /* MyProfile.swift */; };
+		A15F73E8246E66A20022C3CC /* TopViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F73E7246E66A20022C3CC /* TopViewCell.swift */; };
 		A161227B245BB6F6001D2C9F /* OursoptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A161227A245BB6F6001D2C9F /* OursoptViewController.swift */; };
 		A1855C16245068DC0027F0EB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1855C15245068DC0027F0EB /* CustomButton.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +36,12 @@
 		A15D956C244AE64D0039335E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A15D9572244AF21F0039335E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A15D9574244B06AF0039335E /* ApplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyViewController.swift; sourceTree = "<group>"; };
+		A15F73D7246E53670022C3CC /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		A15F73D9246E59CD0022C3CC /* MyProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileCell.swift; sourceTree = "<group>"; };
+		A15F73DB246E59E80022C3CC /* FriendProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileCell.swift; sourceTree = "<group>"; };
+		A15F73DD246E5B3E0022C3CC /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
+		A15F73DF246E5BA70022C3CC /* MyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfile.swift; sourceTree = "<group>"; };
+		A15F73E7246E66A20022C3CC /* TopViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewCell.swift; sourceTree = "<group>"; };
 		A161227A245BB6F6001D2C9F /* OursoptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OursoptViewController.swift; sourceTree = "<group>"; };
 		A1855C15245068DC0027F0EB /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,19 +76,73 @@
 		A15D955D244AE64C0039335E /* SOPT_Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				A15F73E1246E5BE60022C3CC /* Resources */,
+				A15F73E2246E5BF80022C3CC /* Sources */,
 				A15D955E244AE64C0039335E /* AppDelegate.swift */,
 				A15D9560244AE64C0039335E /* SceneDelegate.swift */,
-				A15D9562244AE64C0039335E /* ViewController.swift */,
+				A15D956C244AE64D0039335E /* Info.plist */,
+			);
+			path = SOPT_Assignment;
+			sourceTree = "<group>";
+		};
+		A15F73E1246E5BE60022C3CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				A15D9564244AE64C0039335E /* Main.storyboard */,
 				A15D9567244AE64D0039335E /* Assets.xcassets */,
 				A15D9569244AE64D0039335E /* LaunchScreen.storyboard */,
-				A15D956C244AE64D0039335E /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A15F73E2246E5BF80022C3CC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A15F73E4246E5C3F0022C3CC /* Viewcontrollers */,
+				A15F73E5246E5C4B0022C3CC /* Cell */,
+				A15F73E3246E5C330022C3CC /* Model */,
+				A15F73E6246E5C730022C3CC /* Extensions */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A15F73E3246E5C330022C3CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A15F73DD246E5B3E0022C3CC /* Friends.swift */,
+				A15F73DF246E5BA70022C3CC /* MyProfile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A15F73E4246E5C3F0022C3CC /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				A15D9562244AE64C0039335E /* ViewController.swift */,
 				A15D9572244AF21F0039335E /* LoginViewController.swift */,
 				A15D9574244B06AF0039335E /* ApplyViewController.swift */,
-				A1855C15245068DC0027F0EB /* CustomButton.swift */,
 				A161227A245BB6F6001D2C9F /* OursoptViewController.swift */,
+				A15F73D7246E53670022C3CC /* FriendViewController.swift */,
 			);
-			path = SOPT_Assignment;
+			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		A15F73E5246E5C4B0022C3CC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A15F73D9246E59CD0022C3CC /* MyProfileCell.swift */,
+				A15F73DB246E59E80022C3CC /* FriendProfileCell.swift */,
+				A15F73E7246E66A20022C3CC /* TopViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A15F73E6246E5C730022C3CC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A1855C15245068DC0027F0EB /* CustomButton.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,10 +216,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15F73DA246E59CD0022C3CC /* MyProfileCell.swift in Sources */,
+				A15F73E0246E5BA70022C3CC /* MyProfile.swift in Sources */,
 				A15D9573244AF21F0039335E /* LoginViewController.swift in Sources */,
 				A15D9563244AE64C0039335E /* ViewController.swift in Sources */,
+				A15F73DE246E5B3E0022C3CC /* Friends.swift in Sources */,
+				A15F73DC246E59E80022C3CC /* FriendProfileCell.swift in Sources */,
+				A15F73E8246E66A20022C3CC /* TopViewCell.swift in Sources */,
 				A1855C16245068DC0027F0EB /* CustomButton.swift in Sources */,
 				A15D9575244B06AF0039335E /* ApplyViewController.swift in Sources */,
+				A15F73D8246E53670022C3CC /* FriendViewController.swift in Sources */,
 				A15D955F244AE64C0039335E /* AppDelegate.swift in Sources */,
 				A15D9561244AE64C0039335E /* SceneDelegate.swift in Sources */,
 				A161227B245BB6F6001D2C9F /* OursoptViewController.swift in Sources */,

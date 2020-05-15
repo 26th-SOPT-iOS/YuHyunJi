@@ -134,4 +134,89 @@ class CustomButton: UIButton {
     self.navigationController?.navigationBar.topItem?.title = ""
 ```
 
+## Thirdweek_seminar  
+### __* 과제1: tableview로 카카오톡 채팅 구현하기__
+
+<div>
+<img width="200" alt="스크린샷 2020-05-15 오후 7 45 18" src="https://user-images.githubusercontent.com/22251299/82042698-4d7df900-96e5-11ea-8f84-e657d91daa50.png">
+
+<img width="200" alt="스크린샷 2020-05-15 오후 7 45 34" src="https://user-images.githubusercontent.com/22251299/82042727-5b337e80-96e5-11ea-873d-ab725c20353f.png">
+
+<img width="200" alt="스크린샷 2020-05-15 오후 7 45 50" src="https://user-images.githubusercontent.com/22251299/82042760-67b7d700-96e5-11ea-9730-80e41c55cd45.png">
+</div>
+
+#### 원하는 cell에만 구분선을 만들고 싶을 때 :  UIview이 Height = 0.5인 선을 원하는 cell에 만들어 준  후, tableview의 구분선을 없애준다.
+<img width="386" alt="스크린샷 2020-05-15 오후 7 47 21" src="https://user-images.githubusercontent.com/22251299/82043071-eb71c380-96e5-11ea-931b-3c4cb14fd560.png">
+
+```swift  
+    //tableview cell 간 구분선 없애기
+    Tableview.separatorStyle = UITableViewCell.SeparatorStyle.none
+```
+
+#### Cell header customize 하기
+```swift  
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        //몇번째 section의 header를 custom 할 것인지 정하기
+        if section == 2 {
+            let friendCountLabel = UILabel()
+            friendCountLabel.text = "친구 \(self.friendInformations.count)"
+            friendCountLabel.textColor = UIColor(red: 129/255, green: 129/255, blue: 129/255, alpha: 1.0)
+            friendCountLabel.frame = CGRect.init(x: 16, y: 8, width: 35, height: 17)
+            friendCountLabel.font = UIFont.systemFont(ofSize: 11)
+            headerView.addSubview(friendCountLabel)
+        }
+        return headerView
+    }
+    
+    //custom한 cell을 제외한 다른 cell 없애는 법
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == 0 {
+            return 0
+        }
+        else if section == 1 {
+            return 0
+        }
+        else if section == 2 {
+            return 35
+        }
+        return tableView.sectionHeaderHeight
+    }
+```
+
+#### Cell을 swipe하여 삭제하기
+```swift  
+     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        if indexPath.section == 2 {
+            let deleteAction = UIContextualAction(style: .destructive, title:  "삭제", handler: { (ac:UIContextualAction, view:UIView, success:(Bool) -> Void) in
+                            success(true)
+                self.friendInformations.remove(at: indexPath.row)
+                self.friendTableview.reloadData()
+                        })
+            return UISwipeActionsConfiguration(actions: [deleteAction])
+        }
+        else {
+            return UISwipeActionsConfiguration()
+        }
+    }
+```
+
+#### 설정버튼 눌렀을 때 Actionsheet 나오게 하기
+```swift  
+    @IBAction func settingBtnAction(_ sender: Any) {
+         let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+             
+         let manageAction = UIAlertAction(title: "친구 관리", style: .default)
+         let settingAction = UIAlertAction(title: "전체 설정", style: .default)
+       
+         let cancelAction = UIAlertAction(title: "취소", style: .cancel)
+
+         optionMenu.addAction(manageAction)
+         optionMenu.addAction(settingAction)
+         optionMenu.addAction(cancelAction)
+             
+         self.present(optionMenu, animated: true, completion: nil)
+    }
+```
+
 
