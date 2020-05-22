@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SOPT_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="SOPT_Assignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,6 +135,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="jsq-VY-dGs"/>
                     <connections>
+                        <outlet property="autologinButton" destination="Rj8-ag-uNM" id="7vS-dS-r9E"/>
                         <outlet property="emailTextfield" destination="ISZ-08-Yq7" id="q55-5b-aYB"/>
                         <outlet property="emailTextview" destination="5XK-qO-GuM" id="4KP-Ql-kg3"/>
                         <outlet property="pwTextfield" destination="7Uo-sh-JzP" id="8AJ-FU-oFv"/>

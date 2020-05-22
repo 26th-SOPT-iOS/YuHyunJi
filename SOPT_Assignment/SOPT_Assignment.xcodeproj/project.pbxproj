@@ -23,6 +23,7 @@
 		A15F73E0246E5BA70022C3CC /* MyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F73DF246E5BA70022C3CC /* MyProfile.swift */; };
 		A15F73E8246E66A20022C3CC /* TopViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15F73E7246E66A20022C3CC /* TopViewCell.swift */; };
 		A161227B245BB6F6001D2C9F /* OursoptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A161227A245BB6F6001D2C9F /* OursoptViewController.swift */; };
+		A182FAF42477F35300F1C230 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A182FAF32477F35300F1C230 /* UserDefaultKeys.swift */; };
 		A1855C16245068DC0027F0EB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1855C15245068DC0027F0EB /* CustomButton.swift */; };
 		A19F1BD4246FBC7B003FCEE7 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F1BD3246FBC7B003FCEE7 /* APIConstants.swift */; };
 		A19F1BD6246FBD13003FCEE7 /* SigninData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19F1BD5246FBD13003FCEE7 /* SigninData.swift */; };
@@ -53,6 +54,7 @@
 		A15F73DF246E5BA70022C3CC /* MyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfile.swift; sourceTree = "<group>"; };
 		A15F73E7246E66A20022C3CC /* TopViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewCell.swift; sourceTree = "<group>"; };
 		A161227A245BB6F6001D2C9F /* OursoptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OursoptViewController.swift; sourceTree = "<group>"; };
+		A182FAF32477F35300F1C230 /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
 		A1855C15245068DC0027F0EB /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		A19F1BD3246FBC7B003FCEE7 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		A19F1BD5246FBD13003FCEE7 /* SigninData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninData.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				A1855C15245068DC0027F0EB /* CustomButton.swift */,
+				A182FAF32477F35300F1C230 /* UserDefaultKeys.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A182FAF42477F35300F1C230 /* UserDefaultKeys.swift in Sources */,
 				A19F1BDB246FBE91003FCEE7 /* LoginService.swift in Sources */,
 				A15F73DA246E59CD0022C3CC /* MyProfileCell.swift in Sources */,
 				A15F73E0246E5BA70022C3CC /* MyProfile.swift in Sources */,
