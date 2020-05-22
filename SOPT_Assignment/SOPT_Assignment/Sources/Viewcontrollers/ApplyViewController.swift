@@ -10,10 +10,14 @@ import UIKit
 
 class ApplyViewController: UIViewController {
 
+    @IBOutlet weak var idTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var pwTextField: UITextField!
     
+    @IBOutlet weak var idTextView: UIView!
+    @IBOutlet weak var phoneTextView: UIView!
     @IBOutlet weak var nameTextView: UIView!
     @IBOutlet weak var emailTextView: UIView!
     @IBOutlet weak var pwTextView: UIView!
@@ -21,6 +25,8 @@ class ApplyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        idTextView.layer.cornerRadius = 22
+        phoneTextView.layer.cornerRadius = 22
         nameTextView.layer.cornerRadius = 22
         emailTextView.layer.cornerRadius = 22
         pwTextView.layer.cornerRadius = 22
@@ -53,12 +59,36 @@ class ApplyViewController: UIViewController {
             self.navigationController?.popToRootViewController(animated: true)
         })
         */
-        
+        /*
         guard let ovc = self.storyboard?.instantiateViewController(identifier: "oursoptViewController") as? OursoptViewController else {return}
         
         self.present(ovc, animated: true, completion: { self.navigationController?.popToRootViewController(animated: false
-        )})
-    
+        )})*/
+        //입력값 저장
+        guard let inputID = idTextField.text else { return }
+        guard let inputPWD = pwTextField.text else { return }
+        guard let inputNAME = nameTextField.text else { return }
+        guard let inputPHONE = phoneTextField.text else { return }
+        guard let inputEMAIL = emailTextField.text else { return }
+        
+        //미리 정의해 둔 싱글톤 객체 통해 데이터 통신
+        SignupService.shared.signup(inputID, inputPWD, inputNAME, inputEMAIL, inputPHONE) { networkResult in
+            switch networkResult {
+            //네트워크 통신 결과에 따른 VC 내의 분기처리
+            case .success:
+                print("\(inputID)")
+                self.navigationController?.popViewController(animated: true)
+            case .requestErr(let message):
+                //guard let message = message as? String else { return }
+                let alert = UIAlertController(title: "회원가입 실패", message: message as? String ?? "", preferredStyle: .alert)
+                let action = UIAlertAction(title: "확인", style: .cancel, handler: nil)
+                alert.addAction(action)
+                self.present(alert, animated: true, completion: nil)
+            case .pathErr: print("path")
+            case .serverErr: print("serverErr")
+            case .networkFail: print("networkFail")
+            }
+        }
     }
 
 }
